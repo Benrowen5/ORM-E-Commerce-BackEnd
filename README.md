@@ -2,9 +2,9 @@
   ![License](https://img.shields.io/badge/license-MIT-blue)
   
   ## Description
-  This project is...
+  This project was to develop the back end for an e-commerce site. Using a working Express.js API, code was added to configure it to use Sequelize to interact with a MySQL database.
 
-  * [Demonstration Video]()
+  * [Demonstration Video](https://watch.screencastify.com/v/rd5m8W4B4hWN1sjUnxik)
   
   ***************************************************************
   ## Table of Contents
@@ -16,10 +16,17 @@
 * [Questions](#questions)
 ***************************************************************
 ## Installation
-Clone this repository to your local machine. Install the NPM dependencies before trying to run the index.js file.
-  
+Clone this repository to your local machine and install NPM & dependencies. 
+
 ## Usage
-  With depencies installed, in the command line enter 'node server' to start the app.
+Create a .env file at the project root and paste the following into the file: 
+
+<br>DB_NAME='ecommerce_db'<br>
+<br>DB_USER='your mysql username'<br>
+<br>DB_PW='your mysql password'<br>
+
+Navigate to the project path folder in the terminal, initialize MySql shell, and then run 'source db/schema.sql'. Exist MySql shell and populate the database using the seed files by entering 'npm run seed'. With all prior steps completed, in the command line enter 'node server' to start the app. The routes can then be tested using Insomnia or Postman.
+  
   
 ## License
   This project is covered under the MIT license. 
